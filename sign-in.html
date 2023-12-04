@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>npm | Sign In</title>
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/6078720?s=200&v=4">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins'
+    }
+    .div1{
+        width: 100%;
+        border-width: 10px;
+        border-top-style: solid;
+        border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 5;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 30em;
+        height: 100vh;
+        position: relative;
+    }
+    header {
+        margin: 80px 0 40px;
+        text-align: center;
+    }
+    header svg{
+        width: 144px;
+    }
+    .form1{
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+        padding: 40px 40px 24px 40px;
+        border-radius: 0.5rem;
+    }
+    h1{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        padding: 10px;
+        border-bottom:solid 1px rgba(0,0,0,.1);
+        font-weight: 600;
+        color: rgba(0,0,0,.7);
+        font-size: 1.5rem;
+        margin: 0.67em 0;
+        padding-bottom: 1rem;    
+    }
+    input{
+        height: 38px;
+        margin: 8px 8px 8px 0;
+        border: solid 1px ;
+        border-radius: 0.25rem;
+        width: 100%;
+        position: relative;
+    }
+    label{
+        font-size: 1rem;
+        margin-top: 0.25rem;
+        color: rgba(0,0,0,.9);
+        font-weight: 500;
+    }
+    .forgot a{
+        float: right;
+        color: rgba(0,0,0,.7);
+
+    }
+
+    .sub{
+        background-color: #fff;
+        background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.09) 0%, rgba(17, 17, 17, 0.04) 100%);
+        border: 1px solid rgba(22, 22, 22, 0.2);
+        color: #000;
+        letter-spacing: 0.25px;
+        font-size: 1rem;
+    }
+    .acc{
+        color: #484f59;
+        margin: 1rem auto 0.5rem;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 600;
+        background-color:transparent;
+        display: block;
+    }
+    img{
+        padding-top: 24px;
+        max-width: 100%;
+        border-radius: 50px;
+        background: transparent;
+    }
+    .d1{
+        align-items: center;
+    }
+    .face{
+        left: 50%;
+        margin-left: -29px;
+        position: absolute;
+        top: 100px;
+        width: 58px;
+    }
+    img[eye]{
+        animation-name: eye1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        display: block;
+    }
+    @keyframes eye1{
+        0% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-3px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+
+    }
+    button{
+        animation-name: eye2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        transform: rotate(-5deg);
+        transition-timing-function: ease;
+        transform-origin: bottom center;
+    }
+    @keyframes eye2{
+    0% {
+    transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(-4deg);
+    }
+}
+.img1{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+.hw{
+    position: relative;
+    background: #ddd;
+    border-radius: 9999px;
+    height: 200px;
+    margin: 0 auto 20px;
+    transition:200ms ease;
+    width: 200px;
+}
+
+</style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="main">
+        <header><a href="./indext.html" aria-label="Npm"><svg viewBox="0 0 780 250" aria-hidden="true"><path fill="#231F20" d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z" ></path></svg></a></header>
+        <div class="form1">
+           <div class="hw">
+            <div class="img1">
+                <button class="eye2">
+                    <div class="d1"><img alt="body" role="presentation" src="https://static-production.npmjs.com/c9e19250d48d66f0e9c70c9b3991bbdb.png">
+                        <div class="face">
+                            <img src="https://static-production.npmjs.com/a39ceb9e9ad640f4de8eee094063d890.png" alt="eye">
+                        </div>
+                    </div>
+                   </button>
+               </div>
+           </div>
+            <form action="">
+                <h1>Sign In</h1>
+                <div>
+                    <div><label for="">Username*</label></div>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <div class="forgot"><label for="">Password</label> <a href="">forgot password?</a></div>
+                    <input type="password">
+                </div>
+                <div><input type="submit" class="sub"  value="Sign In"></div>
+                <a href="./signup.html" class="acc">Create Account</a>
+            </form>
+        </div>
+    </div>  
+</body>
+</html>
